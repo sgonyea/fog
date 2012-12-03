@@ -28,6 +28,7 @@ module Fog
       collection :attachments
 
       request_path 'fog/rackspace/requests/compute_v2'
+      request :create_image
       request :list_servers
       request :get_server
       request :create_server
