@@ -24,6 +24,11 @@ module Fog
         attribute :metadata
         attribute :disk_config, :aliases => 'OS-DCF:diskConfig'
         attribute :links
+
+        def ready?
+          self.state == ACTIVE
+        end
+
       end
     end
   end
